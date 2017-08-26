@@ -1,10 +1,16 @@
 {
-  "name": "react-stater-kit",
+  "name": "reactstaterkit",
   "version": "1.0.0",
-  "description": "",
+  "description": "a simple react starter kit to help me speed up development",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "babel-node tools/startMessage.js",
+    "start": "npm-run-all --parallel open:src lint:watch test:watch",
+    "open:src": "babel-node tools/server.js",
+    "lint": "node_modules/.bin/esw webpack.config.* server client",
+    "lint:watch": "npm run lint -- --watch",
+    "test": "mocha  \"client/**/*.test.js\" --compilers js:babel-core/register",
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,15 @@
 import React from "react";
 import { NavigationBar } from "./NavigationBar/NavigationBar.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 const App = () => {
+  const styles = {
+    padding: '10px 40px'
+  }
     return(
-      <div className="container">
+      <div style={styles}>
         <NavigationBar />
-        <h1> Hello World </h1>
+        <Footer />
       </div>
     );
 };
