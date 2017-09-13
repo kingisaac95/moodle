@@ -1,7 +1,7 @@
 {
   "name": "reactstaterkit",
   "version": "1.0.0",
-  "description": "a simple react starter kit to help me speed up development",
+  "description": "a simple react starter kit to help hit the ground running",
   "main": "index.js",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
