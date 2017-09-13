@@ -1,5 +1,6 @@
 import React from "react";
 import { NavigationBar } from "./NavigationBar/NavigationBar.jsx";
+import { MainComponent } from "../components/Main/MainComponent.jsx";
 import Footer from "./Footer/Footer.jsx";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     return(
       <div style={styles}>
         <NavigationBar />
+        <MainComponent />
         <Footer />
       </div>
     );
