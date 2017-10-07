@@ -9,7 +9,7 @@ const config = require('../webpack.config.dev');
 
 dotenv.config();
 
-const port = process.env.PORT || 8400;
+const port = process.env.PORT || 4040;
 const app = express();
 const compiler = webpack(config);
 

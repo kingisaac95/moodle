@@ -1,19 +1,18 @@
-import React from "react";
+import React, { Component, PropTypes } from "react";
 import { NavigationBar } from "./NavigationBar/NavigationBar.jsx";
-import { MainComponent } from "../components/Main/MainComponent.jsx";
+import { Home } from "../components/Main/Home.jsx";
 import Footer from "./Footer/Footer.jsx";
 
-const App = () => {
-  const styles = {
-    padding: '10px 40px'
-  }
-    return(
-      <div style={styles}>
-        <NavigationBar />
-        <MainComponent />
-        <Footer />
-      </div>
-    );
-};
+export default class App extends Component {
+    render() {
+      return(
+        <div>
+          { this.props.children }
+        </div>
+      );
+    }
+}
 
-export default App;
+App.propTypes = {
+  children: PropTypes.object.isRequired,
+};
