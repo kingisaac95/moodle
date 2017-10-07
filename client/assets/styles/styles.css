@@ -233,3 +233,9 @@ p.lecture-details {
   padding: 1rem;
   color: #ffffff;
 }
+
+.btn-pagination{
+  background-color: #7438CD;
+  color: #ffffff; 
+}
+

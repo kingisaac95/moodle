@@ -17,8 +17,8 @@ export const CourseCard = ({courses}) => {
               <p className="lead taught-by">Taught by</p>
               <div>
                 <img src={course.lecturer1} className="img-circle" alt="image" height="40"/>
-                <img src={course.lecturer1} className="img-circle" alt="image" height="40"/>
-                <img src={course.lecturer1} className="img-circle" alt="image" height="40"/>
+                <img src={course.lecturer2} className="img-circle" alt="image" height="40"/>
+                <img src={course.lecturer3} className="img-circle" alt="image" height="40"/>
                 <span className="plus">+ 1 more</span>
               </div>
             </div>
