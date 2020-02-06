@@ -1,7 +1,6 @@
 # Moodle
 
-Learning Resource for Students
-Built for ForLoopCU - Oct 7, 2017
+Learning Resource for Students Built for my ForLoopCU talk - Oct 7, 2017
 
 ### A minimal redesign on Covenant University's current application - Moodle
 
